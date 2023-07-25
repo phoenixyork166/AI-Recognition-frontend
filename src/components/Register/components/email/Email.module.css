@@ -1,6 +1,6 @@
 @media only screen 
-and (min-device-width: 50px)
-and (max-device-width: 199px) {
+and (min-width: 100px) 
+and (max-width: 250px) {
     .emailContainer {
         display: flex;
         flex-direction: column;
@@ -9,19 +9,22 @@ and (max-device-width: 199px) {
     .emailLabel {
         display: flex;
         justify-content: center;
+        position: relative;
     }
     
     .emailLabelInner {
         display: block;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 1.5;
-        font-size: .875rem;
+        font-size: 1.5rem;
     }
     
     .emailSubContainer {
         display: flex;
         flex-direction: row;
         padding-left: 6em;
+        position: relative;
+        left: 0%;
     }
     
     .emailInputInner {
@@ -31,6 +34,8 @@ and (max-device-width: 199px) {
         border-width: 1px;
         background-color: var(--transparent);
         width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
     }
     
     .emailInputInner:hover {
@@ -40,8 +45,6 @@ and (max-device-width: 199px) {
     
     .emailIconEmptyContainer {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
     }
     
     .emailIconEmptyContainer .emailIcon {
@@ -50,17 +53,68 @@ and (max-device-width: 199px) {
         width: 2.5vh;
         align-self: center;
     }
-    
-    .emailIconEmptyContainer .empty {
+}
+
+@media only screen 
+and (min-width: 251px) 
+and (max-width: 499px) {
+    .emailContainer {
         display: flex;
-        width: 7.5vh;
+        flex-direction: column;
+    }
+    
+    .emailLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .emailLabelInner {
+        display: block;
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .emailSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .emailInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .emailInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .emailIconEmptyContainer {
+        display: flex;
+    }
+    
+    .emailIconEmptyContainer .emailIcon {
+        display: flex;
         height: 2.5vh;
+        width: 2.5vh;
+        align-self: center;
     }
 }
 
 @media only screen 
-    and (min-device-widtH: 200px)
-    and (max-device-width: 320px) {
+and (min-width: 500px) 
+and (max-width: 799px) {
         .emailContainer {
             display: flex;
             flex-direction: column;
@@ -70,14 +124,13 @@ and (max-device-width: 199px) {
             display: flex;
             justify-content: center;
             position: relative;
-            left: -5%;
         }
         
         .emailLabelInner {
             display: block;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.5;
-            font-size: .875rem;
+            font-size: 1.5rem;
         }
         
         .emailSubContainer {
@@ -95,8 +148,8 @@ and (max-device-width: 199px) {
             border-width: 1px;
             background-color: var(--transparent);
             width: 100%;
-            min-width: 10rem;
-            max-width: 10rem;
+            min-width: 8.5rem;
+            max-width: 8.5rem;
         }
         
         .emailInputInner:hover {
@@ -106,101 +159,239 @@ and (max-device-width: 199px) {
         
         .emailIconEmptyContainer {
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
         }
         
         .emailIconEmptyContainer .emailIcon {
             display: flex;
-            height: 1vh;
-            width: 1vh;
+            height: 2.5vh;
+            width: 2.5vh;
             align-self: center;
-        }
-        
-        .emailIconEmptyContainer .empty {
-            display: flex;
-            width: 3.5vh;
-            height: 1vh;
         }
     }
 
 @media only screen 
-    and (device-width: 1300px)
-    and (device-height: 1366px) {
-        .emailContainer {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .emailLabel {
-            display: flex;
-            justify-content: center;
-            scale: 2;
-        }
-        
-        .emailLabelInner {
-            display: block;
-            font-weight: 600;
-            line-height: 1.5;
-            font-size: .875rem;
-        }
-        
-        .emailSubContainer {
-            display: flex;
-            flex-direction: row;
-            padding-left: 6em;
-            position: relative;
-            left: -33%;
-            margin-top: 0.5vh;
-            scale: 1.009;
-        }
-
-        .emailInputContainer {
-            box-sizing: border-box;
-            scale: 1.009;
-            position: relative;
-        }
-        
-        .emailInputInner {
-            box-sizing: border-box;
-            scale: 1.009;
-            position: relative;
-            font-weight: bold;
-            padding: 0.5rem;
-            border-style: solid;
-            border-width: 1px;
-            background-color: var(--transparent);
-            width: 100%;
-        }
-        
-        .emailInputInner:hover {
-            background-color: black;
-            color: white;
-        }
-        
-        .emailIconEmptyContainer {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            scale: 0.8;
-            position: absolute;
-            top: -40%;
-            left: 87%;
-            box-sizing: border-box;
-        }
-        
-        .emailIconEmptyContainer > .emailIcon {
-            height: 1.5vh;
-            width: 1.5vh;
-        }
-        
-        .emailIconEmptyContainer > .empty {
-            width: 7.5vh;
-            height: 1.5vh;
-        }
+and (min-width: 800px) 
+and (max-width: 1199px) {
+    .emailContainer {
+        display: flex;
+        flex-direction: column;
     }
+    
+    .emailLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .emailLabelInner {
+        display: block;
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .emailSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .emailInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .emailInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .emailIconEmptyContainer {
+        display: flex;
+    }
+    
+    .emailIconEmptyContainer .emailIcon {
+        display: flex;
+        height: 2.5vh;
+        width: 2.5vh;
+        align-self: center;
+    }
+}
 
+@media only screen 
+and (min-width: 1200px) 
+and (max-width: 1679px) {
+    .emailContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .emailLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .emailLabelInner {
+        display: block;
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .emailSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .emailInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .emailInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .emailIconEmptyContainer {
+        display: flex;
+    }
+    
+    .emailIconEmptyContainer .emailIcon {
+        display: flex;
+        height: 2.5vh;
+        width: 2.5vh;
+        align-self: center;
+    }
+}
 
+@media only screen 
+and (min-width: 1680px) 
+and (max-width: 3839px) {
+    .emailContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .emailLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .emailLabelInner {
+        display: block;
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .emailSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .emailInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .emailInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .emailIconEmptyContainer {
+        display: flex;
+    }
+    
+    .emailIconEmptyContainer .emailIcon {
+        display: flex;
+        height: 2.5vh;
+        width: 2.5vh;
+        align-self: center;
+    }
+}
 
+/* ///////////////// */
+.emailContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.emailLabel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.emailLabelInner {
+    display: block;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.emailSubContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6em;
+    position: relative;
+    left: 0%;
+}
+
+.emailInputInner {
+    font-weight: bold;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--transparent);
+    width: 100%;
+    min-width: 8.5rem;
+    max-width: 8.5rem;
+}
+
+.emailInputInner:hover {
+    background-color: black;
+    color: white;
+}
+
+.emailIconEmptyContainer {
+    display: flex;
+}
+
+.emailIconEmptyContainer .emailIcon {
+    display: flex;
+    height: 2.5vh;
+    width: 2.5vh;
+    align-self: center;
+}
 
 

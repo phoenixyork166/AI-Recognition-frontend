@@ -31,9 +31,9 @@ const Email = ( { onEmailChange, emailValid } ) => {
               alt="emailIcon"
             />
           </div>
-          <div className={`${classes.empty}`}>
+          <div className="#">
             <p
-              className={`${classes.emptyInner}`}
+              className="#"
             />
           </div>
         </div>

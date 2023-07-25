@@ -250,24 +250,7 @@ class Register extends Component {
   }
 
   render() {
-
-    // Destructuring props from this.state
-    const { 
-      name,
-      nameValid,
-      email,
-      emailValid,
-      password,
-      passwordConfirm,
-      lockRegister,
-      password12Char,
-      password1SpecialChar,
-      passwordMatch
-      } = this.state;
-
-    // tachyons styling for register button
-    const registerTachyons = 'b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib';
-
+  
     return (
       <div>
         <article className={`${classes.article}`}> 
@@ -336,8 +319,8 @@ class Register extends Component {
             <div className={`${classes.register}`}>
               <input
                 onClick={this.onSubmitRegister}
-                disabled={lockRegister}
-                className={lockRegister === true ? 
+                disabled={this.state.lockRegister}
+                className={this.state.lockRegister === true ? 
                   `${classes.registerBtn}` :
                   `${classes.registerBtn} ${classes.registerBtnOK}`}
                 type="submit"

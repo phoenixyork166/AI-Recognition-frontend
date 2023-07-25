@@ -1,65 +1,6 @@
 @media only screen 
-and (min-width: 50px) {
-    .nameContainer {
-        margin-top: 1vh;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .nameLabel {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nameLabelInner {
-        display: block;
-        font-weight: 600;
-        line-height: 1.5;
-        font-size: .875rem;
-    }
-    
-    .nameSubContainer {
-        display: flex;
-        flex-direction: row;
-        padding-left: 6em;
-    }
-    
-    .nameInputInner {
-        font-weight: bold;
-        padding: 0.5rem;
-        border-style: solid;
-        border-width: 1px;
-        background-color: var(--transparent);
-        width: 100%;
-    }
-    
-    .nameInputInner:hover {
-        background-color: black;
-        color: white;
-    }
-    
-    .nameIconEmptyContainer {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-    }
-    
-    .nameIconEmptyContainer .nameIcon {
-        display: flex;
-        height: 2.5vh;
-        width: 2.5vh;
-        align-self: center;
-    }
-    
-    .nameIconEmptyContainer .empty {
-        display: flex;
-        width: 7.5vh;
-        height: 2.5vh;
-    }
-}
-
-@media only screen 
-and (max-device-width: 320px) {
+and (min-width: 100px) 
+and (max-width: 250px) {
     .nameContainer {
         margin-top: 1vh;
         display: flex;
@@ -70,14 +11,13 @@ and (max-device-width: 320px) {
         display: flex;
         justify-content: center;
         position: relative;
-        left: -5%;
     }
     
     .nameLabelInner {
         display: block;
         font-weight: 600;
         line-height: 1.5;
-        font-size: .875rem;
+        font-size: 1.5rem;
     }
     
     .nameSubContainer {
@@ -88,6 +28,10 @@ and (max-device-width: 320px) {
         left: 0%;
     }
     
+    .nameInputContainer {
+        display: block;
+    }
+
     .nameInputInner {
         font-weight: bold;
         padding: 0.5rem;
@@ -95,8 +39,8 @@ and (max-device-width: 320px) {
         border-width: 1px;
         background-color: var(--transparent);
         width: 100%;
-        min-width: 10rem;
-        max-width: 10rem;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
     }
     
     .nameInputInner:hover {
@@ -106,97 +50,391 @@ and (max-device-width: 320px) {
     
     .nameIconEmptyContainer {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
     }
     
     .nameIconEmptyContainer > .nameIcon {
         display: flex;
         align-self: center;
-        height: 1vh;
-        width: 1vh;
-        position: relative;
-        top: -30%;        
-    }
-    
-    .nameIconEmptyContainer > .empty {
-        display: flex;
-        width: 3.5vh;
-        height: 1vh;
+        height: 2.5vh;
+        width: 2.5vh;
+        position: relative;    
     }
 }
 
 @media only screen 
-    and (max-device-width: 1300px)
-    and (max-device-height: 1366px) {
-        .nameContainer {
-            margin-top: 1vh;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .nameLabel {
-            display: flex;
-            justify-content: center;
-            scale: 2.0;
-        }
-        
-        .nameLabelInner {
-            display: block;
-            font-weight: 600;
-            line-height: 1.5;
-            font-size: .875rem;
-        }
-        
-        .nameSubContainer {
-            display: flex;
-            flex-direction: row;
-            padding-left: 6em;
-            position: relative;
-            left: -33%;
-            margin-top: 0.5vh;
-        }
-
-        .nameInputContainer {
-            box-sizing: border-box;
-            scale: 1.009;
-            position: relative;
-        }
-        
-        .nameInputInner {
-            font-weight: 700;
-            padding: 0.5rem;
-            border-style: solid;
-            border-width: 1px;
-            background-color: var(--transparent);
-            width: 100%;
-        }
-        
-        .nameInputInner:hover {
-            background-color: black;
-            color: white;
-        }
-        
-        .nameIconEmptyContainer {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            scale: 0.8;
-            position: absolute;
-            top: -40%;
-            left: 88%;
-        }
-        
-        .nameIconEmptyContainer > .nameIcon {
-            height: 1.5vh;
-            width: 1.5vh;
-        }
-        
-        .nameIconEmptyContainer > .empty {
-            width: 7.5vh;
-            height: 1.5vh;
-        }
+and (min-width: 251px) 
+and (max-width: 499px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
     }
+    
+    .nameLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .nameLabelInner {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .nameInputContainer {
+        display: block;
+    }
+
+    .nameInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .nameInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+    }
+    
+    .nameIconEmptyContainer > .nameIcon {
+        display: flex;
+        align-self: center;
+        height: 2.5vh;
+        width: 2.5vh;
+        position: relative;    
+    }
+}
+
+@media only screen 
+and (min-width: 500px) 
+and (max-width: 799px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nameLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .nameLabelInner {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .nameInputContainer {
+        display: block;
+    }
+
+    .nameInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .nameInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+    }
+    
+    .nameIconEmptyContainer > .nameIcon {
+        display: flex;
+        align-self: center;
+        height: 2.5vh;
+        width: 2.5vh;
+        position: relative;    
+    }
+}
+
+@media only screen 
+and (min-width: 800px) 
+and (max-width: 1199px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nameLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .nameLabelInner {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .nameInputContainer {
+        display: block;
+    }
+
+    .nameInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .nameInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+    }
+    
+    .nameIconEmptyContainer > .nameIcon {
+        display: flex;
+        align-self: center;
+        height: 2.5vh;
+        width: 2.5vh;
+        position: relative;    
+    }
+}
+
+@media only screen 
+and (min-width: 1200px) 
+and (max-width: 1679px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nameLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .nameLabelInner {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .nameInputContainer {
+        display: block;
+    }
+
+    .nameInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .nameInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+    }
+    
+    .nameIconEmptyContainer > .nameIcon {
+        display: flex;
+        align-self: center;
+        height: 2.5vh;
+        width: 2.5vh;
+        position: relative;    
+    }
+}
+
+@media only screen 
+and (min-width: 1680px) {
+    .nameContainer {
+        margin-top: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nameLabel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .nameLabelInner {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+    
+    .nameSubContainer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 6em;
+        position: relative;
+        left: 0%;
+    }
+    
+    .nameInputContainer {
+        display: block;
+    }
+
+    .nameInputInner {
+        font-weight: bold;
+        padding: 0.5rem;
+        border-style: solid;
+        border-width: 1px;
+        background-color: var(--transparent);
+        width: 100%;
+        min-width: 8.5rem;
+        max-width: 8.5rem;
+    }
+    
+    .nameInputInner:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .nameIconEmptyContainer {
+        display: flex;
+    }
+    
+    .nameIconEmptyContainer > .nameIcon {
+        display: flex;
+        align-self: center;
+        height: 2.5vh;
+        width: 2.5vh;
+        position: relative;    
+    }
+}
+
+/* /////////////////////////////////////// */
+.nameContainer {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameLabel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nameLabelInner {
+    display: block;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.nameSubContainer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6em;
+    position: relative;
+    left: 0%;
+}
+
+.nameInputContainer {
+    display: block;
+}
+
+.nameInputInner {
+    font-weight: bold;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--transparent);
+    width: 100%;
+    min-width: 8.5rem;
+    max-width: 8.5rem;
+}
+
+.nameInputInner:hover {
+    background-color: black;
+    color: white;
+}
+
+.nameIconEmptyContainer {
+    display: flex;
+}
+
+.nameIconEmptyContainer > .nameIcon {
+    display: flex;
+    align-self: center;
+    height: 2.5vh;
+    width: 2.5vh;
+    position: relative;    
+}
+
 
 
 
