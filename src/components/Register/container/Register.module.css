@@ -1,4 +1,4 @@
-@media only screen and (min-width: 100px) {
+@media only screen and (min-width: 100px) and (max-width: 250px) {
     .article {
         display: flex;
         justify-content: center;
@@ -93,7 +93,7 @@
       }
   }
 
-@media only screen and (min-width: 250px) {
+@media only screen and (min-width: 251px) and (max-width: 499px) {
     .article {
         display: flex;
         justify-content: center;
@@ -189,7 +189,7 @@
       }
   }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 500px) and (max-width: 699px) {
     .article {
       display: flex;
       justify-content: center;
@@ -236,7 +236,6 @@
       display: flex;
       flex-flow: column nowrap;
       position: relative;
-      left: 5%;
     }
   
     .register {
@@ -252,7 +251,11 @@
       white-space: normal;
     }
   
-    .nameNotice,
+    .nameNotice {
+      min-width: 5vh;
+      width: 96%;
+    }
+
     .emailNotice {
       min-width: 5vh;
       width: 96%;
@@ -288,7 +291,7 @@
     }
   }
   
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 700px) and (max-width: 999px) {
     .article {
         display: flex;
         justify-content: center;
@@ -963,7 +966,6 @@ and (device-height: 915px) {
         display: flex;
         flex-flow: column nowrap;
         position: relative;
-        left: 5%;
       }
     }
 
