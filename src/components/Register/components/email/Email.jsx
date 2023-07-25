@@ -31,11 +31,6 @@ const Email = ( { onEmailChange, emailValid } ) => {
               alt="emailIcon"
             />
           </div>
-          <div className="#">
-            <p
-              className="#"
-            />
-          </div>
         </div>
       </div>
     </div>

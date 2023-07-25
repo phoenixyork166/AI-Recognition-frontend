@@ -120,14 +120,7 @@ and (max-width: 799px) {
             flex-direction: column;
         }
         
-        .emailLabel {
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-        
         .emailLabelInner {
-            display: block;
             font-weight: 700;
             line-height: 1.5;
             font-size: 1.5rem;
@@ -135,10 +128,7 @@ and (max-width: 799px) {
         
         .emailSubContainer {
             display: flex;
-            flex-direction: row;
             padding-left: 6em;
-            position: relative;
-            left: 0%;
         }
         
         .emailInputInner {
@@ -161,11 +151,16 @@ and (max-width: 799px) {
             display: flex;
         }
         
-        .emailIconEmptyContainer .emailIcon {
-            display: flex;
-            height: 2.5vh;
+        .emailIconEmptyContainer > .emailIcon {
             width: 2.5vh;
             align-self: center;
+        }
+
+        .emailIcon > .emailIconInner {
+            max-width: 100%;
+            border-style: none;
+            overflow-clip-margin: content-box;
+            overflow: clip;
         }
     }
 
@@ -346,14 +341,7 @@ and (max-width: 3839px) {
     flex-direction: column;
 }
 
-.emailLabel {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
 .emailLabelInner {
-    display: block;
     font-weight: 700;
     line-height: 1.5;
     font-size: 1.5rem;
@@ -361,10 +349,7 @@ and (max-width: 3839px) {
 
 .emailSubContainer {
     display: flex;
-    flex-direction: row;
     padding-left: 6em;
-    position: relative;
-    left: 0%;
 }
 
 .emailInputInner {
@@ -387,11 +372,14 @@ and (max-width: 3839px) {
     display: flex;
 }
 
-.emailIconEmptyContainer .emailIcon {
-    display: flex;
-    height: 2.5vh;
+.emailIconEmptyContainer > .emailIcon {
     width: 2.5vh;
     align-self: center;
 }
 
-
+.emailIcon > .emailIconInner {
+    max-width: 100%;
+    border-style: none;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}

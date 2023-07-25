@@ -132,15 +132,8 @@ and (max-width: 799px) {
         display: flex;
         flex-direction: column;
     }
-    
-    .nameLabel {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    
+      
     .nameLabelInner {
-        display: block;
         font-weight: 600;
         line-height: 1.5;
         font-size: 1.5rem;
@@ -154,10 +147,6 @@ and (max-width: 799px) {
         left: 0%;
     }
     
-    .nameInputContainer {
-        display: block;
-    }
-
     .nameInputInner {
         font-weight: bold;
         padding: 0.5rem;
@@ -182,8 +171,7 @@ and (max-width: 799px) {
         display: flex;
         align-self: center;
         height: 2.5vh;
-        width: 2.5vh;
-        position: relative;    
+        width: 2.5vh;  
     }
 }
 
@@ -381,15 +369,8 @@ and (min-width: 1680px) {
     display: flex;
     flex-direction: column;
 }
-
-.nameLabel {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
+  
 .nameLabelInner {
-    display: block;
     font-weight: 600;
     line-height: 1.5;
     font-size: 1.5rem;
@@ -401,10 +382,6 @@ and (min-width: 1680px) {
     padding-left: 6em;
     position: relative;
     left: 0%;
-}
-
-.nameInputContainer {
-    display: block;
 }
 
 .nameInputInner {
@@ -431,8 +408,7 @@ and (min-width: 1680px) {
     display: flex;
     align-self: center;
     height: 2.5vh;
-    width: 2.5vh;
-    position: relative;    
+    width: 2.5vh;  
 }
 
 
